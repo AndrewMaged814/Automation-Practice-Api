@@ -1,0 +1,694 @@
+2025-07-03 15:50:35 [Debug] TestBase`1:SetContextData@50 -> Status Code: "Unauthorized"
+2025-07-03 15:50:35 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Data": null,
+  "Errors": null
+}
+2025-07-03 15:50:35 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 15:52:53 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 15:52:53 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Data": null,
+  "Errors": null
+}
+2025-07-03 15:52:53 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:25:42 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:25:42 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:25:42 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:32:59 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:32:59 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:32:59 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:33:35 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:33:35 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:33:35 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:34:33 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:34:33 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:34:33 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:35:53 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:35:53 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:35:53 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:36:25 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:36:25 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:36:25 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:38:40 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:38:40 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:38:40 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:45:01 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:45:01 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:45:01 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:47:47 [Debug] TestBase`1:SetContextData@50 -> Status Code: "OK"
+2025-07-03 16:47:47 [Debug] TestBase`1:SetContextData@51 -> Response Body: {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:47:47 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: "https://reqres.in/api/register"
+2025-07-03 16:49:56 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:49:56 [Debug] TestBase`1:SetContextData@52 -> {
+  "Data": null
+}
+2025-07-03 16:49:56 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 16:50:21 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:50:22 [Debug] TestBase`1:SetContextData@52 -> {
+  "Data": null
+}
+2025-07-03 16:50:22 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 16:52:38 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:52:38 [Debug] TestBase`1:SetContextData@52 -> {
+  "Data": null
+}
+2025-07-03 16:52:38 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 16:52:44 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:52:44 [Debug] TestBase`1:SetContextData@52 -> {
+  "Data": null
+}
+2025-07-03 16:52:44 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 16:53:25 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:53:26 [Debug] TestBase`1:SetContextData@52 -> {
+  "Data": null
+}
+2025-07-03 16:53:26 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 16:53:59 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:53:59 [Debug] TestBase`1:SetContextData@52 -> {
+  "Data": null
+}
+2025-07-03 16:53:59 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 16:55:10 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:55:10 [Debug] TestBase`1:SetContextData@52 -> {
+  "Data": null
+}
+2025-07-03 16:55:10 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 16:58:57 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:58:58 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:58:59 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 16:59:18 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 16:59:19 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 16:59:19 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:04:08 [Debug] TestBase`1:SetContextData@52 -> OK
+2025-07-03 17:04:08 [Debug] TestBase`1:SetContextData@53 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:04:08 [Debug] TestBase`1:SetContextData@56 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:04:09 [Debug] TestBase`1:SetContextData@52 -> Unauthorized
+2025-07-03 17:04:09 [Debug] TestBase`1:SetContextData@53 -> {
+  "Id": 0,
+  "Email": null,
+  "FirstName": null,
+  "LastName": null,
+  "Avatar": null
+}
+2025-07-03 17:04:09 [Debug] TestBase`1:SetContextData@56 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:04:39 [Debug] TestBase`1:SetContextData@52 -> OK
+2025-07-03 17:04:39 [Debug] TestBase`1:SetContextData@53 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:04:39 [Debug] TestBase`1:SetContextData@56 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:04:40 [Debug] TestBase`1:SetContextData@52 -> OK
+2025-07-03 17:04:40 [Debug] TestBase`1:SetContextData@53 -> {
+  "Id": 0,
+  "Email": null,
+  "FirstName": null,
+  "LastName": null,
+  "Avatar": null
+}
+2025-07-03 17:04:40 [Debug] TestBase`1:SetContextData@56 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:06:55 [Debug] TestBase`1:SetContextData@52 -> OK
+2025-07-03 17:06:55 [Debug] TestBase`1:SetContextData@53 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:06:55 [Debug] TestBase`1:SetContextData@56 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:22:57 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:22:57 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:22:57 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:23:07 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:23:07 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 0,
+  "Email": null,
+  "FirstName": null,
+  "LastName": null,
+  "Avatar": null
+}
+2025-07-03 17:23:07 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:23:27 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:23:27 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:23:27 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:24:21 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:24:22 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:24:22 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:25:56 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:25:56 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:25:56 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:25:57 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:25:57 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 0,
+  "Email": null,
+  "FirstName": null,
+  "LastName": null,
+  "Avatar": null
+}
+2025-07-03 17:25:57 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:27:53 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:27:53 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:27:53 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:27:54 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:27:54 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 0,
+  "Email": null,
+  "FirstName": null,
+  "LastName": null,
+  "Avatar": null
+}
+2025-07-03 17:27:54 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:28:35 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:28:35 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:28:35 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:29:19 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:30:03 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:30:03 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:30:03 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:30:05 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:30:05 [Debug] TestBase`1:SetContextData@52 -> {
+  "Id": 0,
+  "Email": null,
+  "FirstName": null,
+  "LastName": null,
+  "Avatar": null
+}
+2025-07-03 17:30:05 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:31:32 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 17:31:32 [Debug] TestBase`1:SetContextData@52 -> null
+2025-07-03 17:31:32 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:35:58 [Debug] TestBase`1:SetContextData@53 -> OK
+2025-07-03 17:35:59 [Debug] TestBase`1:SetContextData@54 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:36:00 [Debug] TestBase`1:SetContextData@57 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:40:01 [Debug] TestBase`1:SetContextData@64 -> OK
+2025-07-03 17:40:01 [Debug] TestBase`1:SetContextData@65 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:40:01 [Debug] TestBase`1:SetContextData@68 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:40:02 [Debug] TestBase`1:SetContextDataWithData@78 -> OK
+2025-07-03 17:40:02 [Debug] TestBase`1:SetContextDataWithData@79 -> {
+  "Data": {
+    "Id": 4,
+    "Email": null,
+    "FirstName": null,
+    "LastName": null,
+    "Avatar": null
+  }
+}
+2025-07-03 17:40:02 [Debug] TestBase`1:SetContextDataWithData@83 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:40:57 [Debug] TestBase`1:SetContextData@64 -> OK
+2025-07-03 17:40:57 [Debug] TestBase`1:SetContextData@65 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:40:57 [Debug] TestBase`1:SetContextData@68 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:42:01 [Debug] TestBase`1:SetContextDataWithData@78 -> OK
+2025-07-03 17:42:01 [Debug] TestBase`1:SetContextDataWithData@79 -> {
+  "Data": {
+    "Id": 4,
+    "Email": null,
+    "FirstName": null,
+    "LastName": null,
+    "Avatar": null
+  }
+}
+2025-07-03 17:42:01 [Debug] TestBase`1:SetContextDataWithData@83 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:43:58 [Debug] TestBase`1:SetContextData@64 -> OK
+2025-07-03 17:43:58 [Debug] TestBase`1:SetContextData@65 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:43:58 [Debug] TestBase`1:SetContextData@68 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:45:25 [Debug] TestBase`1:SetContextData@64 -> OK
+2025-07-03 17:45:25 [Debug] TestBase`1:SetContextData@65 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:45:25 [Debug] TestBase`1:SetContextData@68 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:45:31 [Debug] TestBase`1:SetContextDataWithData@78 -> OK
+2025-07-03 17:45:31 [Debug] TestBase`1:SetContextDataWithData@79 -> {
+  "Data": {
+    "Id": 4,
+    "Email": null
+  }
+}
+2025-07-03 17:45:31 [Debug] TestBase`1:SetContextDataWithData@83 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:47:06 [Debug] TestBase`1:SetContextData@64 -> OK
+2025-07-03 17:47:06 [Debug] TestBase`1:SetContextData@65 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:47:06 [Debug] TestBase`1:SetContextData@68 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:51:30 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 17:51:30 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:51:30 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:51:30 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 17:51:30 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 0,
+  "Email": null
+}
+2025-07-03 17:51:30 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:56:52 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 17:56:52 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:56:52 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:56:52 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 17:56:52 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 0,
+  "Email": null
+}
+2025-07-03 17:56:52 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:57:15 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 17:57:15 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:57:15 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:58:49 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 17:58:49 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:58:49 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 17:58:49 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 17:58:49 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Email": null
+}
+2025-07-03 17:58:49 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 17:59:02 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 17:59:03 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 17:59:03 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:00:39 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:00:40 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:00:40 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:02:22 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:02:22 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:02:22 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:02:23 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:02:23 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Name": "aqua sky",
+  "Year": 2003,
+  "Color": "#7BC4C4",
+  "PantoneValue": "14-4811"
+}
+2025-07-03 18:02:23 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 18:06:49 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:06:49 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:06:49 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:06:49 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:06:49 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Name": "aqua sky",
+  "Year": 2003,
+  "Color": "#7BC4C4",
+  "PantoneValue": "14-4811"
+}
+2025-07-03 18:06:49 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 18:07:29 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:07:29 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:07:29 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:07:29 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:07:29 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Name": "aqua sky",
+  "Year": 2003,
+  "Color": "#7BC4C4",
+  "PantoneValue": "14-4811"
+}
+2025-07-03 18:07:29 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 18:07:30 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:07:30 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Email": "eve.holt@reqres.in",
+  "FirstName": "Eve",
+  "LastName": "Holt",
+  "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+}
+2025-07-03 18:07:30 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Name": "aqua sky",
+  "Year": 2003,
+  "Color": "#7BC4C4",
+  "PantoneValue": "14-4811"
+}
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/user/4
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Email": "eve.holt@reqres.in",
+  "FirstName": "Eve",
+  "LastName": "Holt",
+  "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+}
+2025-07-03 18:07:49 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 18:23:39 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:23:39 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:23:39 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:23:40 [Debug] TestBase`1:SetContextData@54 -> OK
+2025-07-03 18:23:40 [Debug] TestBase`1:SetContextData@55 -> {
+  "Id": 4,
+  "Email": "eve.holt@reqres.in",
+  "FirstName": "Eve",
+  "LastName": "Holt",
+  "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+}
+2025-07-03 18:23:40 [Debug] TestBase`1:SetContextData@58 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 18:24:03 [Debug] TestBase`1:SetContextData@52 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:24:03 [Debug] TestBase`1:SetContextData@57 -> OK
+2025-07-03 18:24:03 [Debug] TestBase`1:SetContextData@58 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:24:03 [Debug] TestBase`1:SetContextData@52 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 18:24:03 [Debug] TestBase`1:SetContextData@57 -> OK
+2025-07-03 18:24:03 [Debug] TestBase`1:SetContextData@58 -> {
+  "Id": 4,
+  "Email": "eve.holt@reqres.in",
+  "FirstName": "Eve",
+  "LastName": "Holt",
+  "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+}
+2025-07-03 18:31:20 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:31:20 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 18:31:20 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:32:05 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:32:05 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 18:32:05 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:36:49 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:36:49 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 18:36:49 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:37:18 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:37:18 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 18:37:18 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:37:18 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 18:37:18 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 18:37:18 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Email": "eve.holt@reqres.in",
+  "FirstName": "Eve",
+  "LastName": "Holt",
+  "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+}
+2025-07-03 18:39:27 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:39:27 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 18:39:27 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:41:06 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 18:41:06 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 18:41:06 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 18:41:06 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 18:41:06 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 18:41:06 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Email": "eve.holt@reqres.in",
+  "FirstName": "Eve",
+  "LastName": "Holt",
+  "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+}
+2025-07-03 19:33:34 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 19:33:34 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 19:33:34 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 19:33:35 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 19:33:35 [Debug] TestBase`1:SetContextData@56 -> OK
+2025-07-03 19:33:35 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 4,
+  "Email": "eve.holt@reqres.in",
+  "FirstName": "Eve",
+  "LastName": "Holt",
+  "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+}
+2025-07-03 19:34:15 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 19:34:15 [Debug] TestBase`1:SetContextData@56 -> BadRequest
+2025-07-03 19:34:15 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 0,
+  "Token": null
+}
+2025-07-03 19:39:43 [Debug] TestBase`1:SetContextData@51 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 19:39:43 [Debug] TestBase`1:SetContextData@56 -> BadRequest
+2025-07-03 19:39:43 [Debug] TestBase`1:SetContextData@57 -> {
+  "Id": 0,
+  "Token": null
+}
+2025-07-03 19:41:50 [Debug] TestBase`1:SetContextData@50 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 19:41:50 [Debug] TestBase`1:SetContextData@55 -> BadRequest
+2025-07-03 19:41:51 [Debug] TestBase`1:SetContextData@56 -> {
+  "Id": 0,
+  "Token": null
+}
+2025-07-03 19:43:31 [Debug] TestBase`1:SetContextData@50 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 19:43:31 [Debug] TestBase`1:SetContextData@55 -> BadRequest
+2025-07-03 19:43:31 [Debug] TestBase`1:SetContextData@56 -> {
+  "Id": 0,
+  "Token": null
+}
+2025-07-03 19:43:44 [Debug] TestBase`1:SetContextData@50 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 19:43:44 [Debug] TestBase`1:SetContextData@55 -> BadRequest
+2025-07-03 19:43:44 [Debug] TestBase`1:SetContextData@56 -> {
+  "Id": 0,
+  "Token": null
+}
+2025-07-03 19:44:23 [Debug] TestBase`1:SetContextData@50 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 19:58:45 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 19:58:45 [Debug] TestBase`1:SetContextData@58 -> OK
+2025-07-03 19:58:45 [Debug] TestBase`1:SetContextData@59 -> {
+  "Data": null
+}
+2025-07-03 19:58:45 [Debug] TestBase`1:SetContextData@55 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 19:58:45 [Debug] TestBase`1:SetContextData@58 -> OK
+2025-07-03 19:58:45 [Debug] TestBase`1:SetContextData@59 -> {
+  "Data": null
+}
+2025-07-03 20:48:41 [Debug] TestBase`1:Post@31 -> {
+  "email": "eve.holt@reqres.in",
+  "password": "pistol"
+}
+2025-07-03 20:48:41 [Debug] TestBase`1:SetContextData@67 -> OK
+2025-07-03 20:48:41 [Debug] TestBase`1:SetContextData@68 -> {
+  "Data": null
+}
+2025-07-03 20:48:41 [Debug] TestBase`1:SetContextData@71 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 20:49:03 [Debug] TestBase`1:Post@31 -> {
+  "email": "eve.holt@reqres.in",
+  "password": "pistol"
+}
+2025-07-03 20:49:03 [Debug] TestBase`1:SetContextData@67 -> OK
+2025-07-03 20:49:03 [Debug] TestBase`1:SetContextData@68 -> {
+  "Data": null
+}
+2025-07-03 20:49:03 [Debug] TestBase`1:SetContextData@71 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 20:59:54 [Debug] TestBase`1:Post@25 -> {
+  "email": "eve.holt@reqres.in",
+  "password": "pistol"
+}
+2025-07-03 20:59:54 [Debug] TestBase`1:SetContextData@51 -> OK
+2025-07-03 20:59:54 [Debug] TestBase`1:SetContextData@52 -> {
+  "Data": null
+}
+2025-07-03 20:59:54 [Debug] TestBase`1:SetContextData@56 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:07:16 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in",
+  "password": "pistol"
+}
+2025-07-03 21:07:16 [Debug] TestBase`1:SetRawContextData@84 -> OK
+2025-07-03 21:07:16 [Debug] TestBase`1:SetRawContextData@85 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 21:07:16 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:07:17 [Debug] TestBase`1:SetContextData@66 -> OK
+2025-07-03 21:07:17 [Debug] TestBase`1:SetContextData@67 -> {
+  "Data": {
+    "Id": 4,
+    "Email": "eve.holt@reqres.in",
+    "FirstName": "Eve",
+    "LastName": "Holt",
+    "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+  }
+}
+2025-07-03 21:07:17 [Debug] TestBase`1:SetContextData@71 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 21:08:05 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in"
+}
+2025-07-03 21:08:06 [Debug] TestBase`1:SetRawContextData@84 -> BadRequest
+2025-07-03 21:08:06 [Debug] TestBase`1:SetRawContextData@85 -> {
+  "Id": 0,
+  "Token": null
+}
+2025-07-03 21:08:06 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:09:05 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in",
+  "password": "pistol"
+}
+2025-07-03 21:09:06 [Debug] TestBase`1:SetRawContextData@84 -> OK
+2025-07-03 21:09:06 [Debug] TestBase`1:SetRawContextData@85 -> {
+  "Id": 4,
+  "Token": "QpwL5tke4Pnpja7X4"
+}
+2025-07-03 21:09:06 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:09:06 [Debug] TestBase`1:SetContextData@66 -> OK
+2025-07-03 21:09:06 [Debug] TestBase`1:SetContextData@67 -> {
+  "Data": {
+    "Id": 4,
+    "Email": "eve.holt@reqres.in",
+    "FirstName": "Eve",
+    "LastName": "Holt",
+    "Avatar": "https://reqres.in/img/faces/4-image.jpg"
+  }
+}
+2025-07-03 21:09:06 [Debug] TestBase`1:SetContextData@71 -> Full Request URL: https://reqres.in/api/users/4
+2025-07-03 21:10:13 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in"
+}
+2025-07-03 21:10:14 [Debug] TestBase`1:SetRawContextData@84 -> BadRequest
+2025-07-03 21:10:14 [Debug] TestBase`1:SetRawContextData@85 -> {
+  "Id": 0,
+  "Token": null
+}
+2025-07-03 21:10:14 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:10:45 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in"
+}
+2025-07-03 21:10:46 [Debug] TestBase`1:SetRawContextData@84 -> BadRequest
+2025-07-03 21:10:46 [Debug] TestBase`1:SetRawContextData@85 -> null
+2025-07-03 21:10:46 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:11:47 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in"
+}
+2025-07-03 21:11:48 [Debug] TestBase`1:SetRawContextData@84 -> BadRequest
+2025-07-03 21:11:48 [Debug] TestBase`1:SetRawContextData@85 -> {
+  "Error": "Missing password"
+}
+2025-07-03 21:11:48 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:17:58 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in"
+}
+2025-07-03 21:17:58 [Debug] TestBase`1:SetRawContextData@84 -> BadRequest
+2025-07-03 21:17:58 [Debug] TestBase`1:SetRawContextData@85 -> {
+  "Error": "Missing password"
+}
+2025-07-03 21:17:58 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:19:10 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in"
+}
+2025-07-03 21:19:10 [Debug] TestBase`1:SetRawContextData@84 -> BadRequest
+2025-07-03 21:19:10 [Debug] TestBase`1:SetRawContextData@85 -> {
+  "Error": "Missing password"
+}
+2025-07-03 21:19:10 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
+2025-07-03 21:20:08 [Debug] TestBase`1:PostRaw@37 -> {
+  "email": "eve.holt@reqres.in"
+}
+2025-07-03 21:20:09 [Debug] TestBase`1:SetRawContextData@84 -> BadRequest
+2025-07-03 21:20:09 [Debug] TestBase`1:SetRawContextData@85 -> {
+  "Error": "Missing password"
+}
+2025-07-03 21:20:09 [Debug] TestBase`1:SetRawContextData@89 -> Full Request URL: https://reqres.in/api/register
