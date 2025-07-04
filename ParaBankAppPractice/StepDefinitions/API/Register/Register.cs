@@ -1,45 +1,46 @@
-using Reqnroll;
+using System.Collections.Generic;
+using ParaBankAppPractice.Models;
+using ParaBankAppPractice.Models.API.Register;
+using ParaBankAppPractice.Utils;
+using Xunit.Abstractions;
 
-namespace ParaBankAppPractice.StepDefinitions;
+namespace ParaBankAppPractice.StepDefinitions.API.Register;
 
 [Binding]
-public sealed class Register
+public sealed class Register(ITestOutputHelper outputHelper, ScenarioContext scenarioContext)
+    : APITestBase<object>(outputHelper, scenarioContext, _endpoint)
 {
-    // For additional details on Reqnroll step definitions see https://go.reqnroll.net/doc-stepdef
+    private const string _endpoint = "/api/register";
 
-    [Given("the first number is {int}")]
-    public void GivenTheFirstNumberIs(int number)
+    [When("I send a registration request with the following data:")]
+    public void WhenISendARegistrationRequestWithTheFollowingData(Table table)
     {
-        //TODO: implement arrange (precondition) logic
-        // For storing and retrieving scenario-specific data see https://go.reqnroll.net/doc-sharingdata
-        // To use the multiline text or the table argument of the scenario,
-        // additional string/DataTable parameters can be defined on the step definition
-        // method. 
+        var row = table.Rows[0];
 
-        throw new PendingStepException();
+        var email = row.ContainsKey("email") ? row["email"] : null;
+        var password = row.ContainsKey("password") ? row["password"] : null;
+
+        var payload = new Dictionary<string, object>();
+        if (!string.IsNullOrWhiteSpace(email)) payload["email"] = email;
+        if (!string.IsNullOrWhiteSpace(password)) payload["password"] = password;
+
+        PostRaw<Dictionary<string, object>, RegisterResponse>(payload);
+
+        var response = scenarioContext.Get<RegisterResponse>(ScenarioContextKeys.ResponseKey);
+
+        if (response != null && response.Id != 0) scenarioContext.SetValue(ScenarioContextKeys.UserId, response.Id);
     }
 
-    [Given("the second number is {int}")]
-    public void GivenTheSecondNumberIs(int number)
+    [When("I send attempt registration request with the following data:")]
+    public void WhenISendAttemptRegistrationRequestWithTheFollowingData(Table table)
     {
-        //TODO: implement arrange (precondition) logic
+        var row = table.Rows[0];
 
-        throw new PendingStepException();
-    }
+        var email = row.ContainsKey("email") ? row["email"] : null;
 
-    [When("the two numbers are added")]
-    public void WhenTheTwoNumbersAreAdded()
-    {
-        //TODO: implement act (action) logic
+        var payload = new Dictionary<string, object>();
+        if (!string.IsNullOrWhiteSpace(email)) payload["email"] = email;
 
-        throw new PendingStepException();
-    }
-
-    [Then("the result should be {int}")]
-    public void ThenTheResultShouldBe(int result)
-    {
-        //TODO: implement assert (verification) logic
-
-        throw new PendingStepException();
+        PostRaw<Dictionary<string, object>, ErrorResponse>(payload);
     }
 }

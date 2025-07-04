@@ -1,3 +1,4 @@
+using System;
 using System.Text.Json;
 
 namespace Common.Utils;
@@ -23,7 +24,6 @@ public class JsonConverter
 
 		return body;
 	}
-
 	public string ToJson<T>(T type)
 	{
 		var body = string.Empty;

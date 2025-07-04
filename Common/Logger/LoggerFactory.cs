@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 using Serilog;
 using Serilog.Formatting.Display;
 using Xunit.Abstractions;

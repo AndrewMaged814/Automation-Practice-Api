@@ -4,12 +4,8 @@ namespace Common.RestMethods;
 
 public static class RestMethodsFactory
 {
-	public static IRestMethods GetMethods(bool isEncryptionEnabled)
+	public static IRestMethods GetMethods()
 	{
-		if (isEncryptionEnabled)
-			return EncryptedRestMethods.GetInstance();
-
 		return PlainRestMethods.GetInstance();
-
 	}
 }

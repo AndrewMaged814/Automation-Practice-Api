@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Common.Extensions;
 using Common.Interfaces;
 using Common.Utils;
@@ -23,16 +24,16 @@ public class PlainRestMethods : IRestMethods
     }
 
     public IResponse Get<T>(string endpoint,
-        string? token = "",
         Dictionary<string, object>? pathParams = null,
         Dictionary<string, object>? queryParams = null)
     {
         var client = new RestClient(BaseUrl);
         var request = new RestRequest(endpoint);
-        request.AddHeader("Authorization", $"Bearer {token}");
+        
+        
         request.AddHeader("Content-Type", "application/json");
         request.AddHeader("Accept", "*/*");
-        request.AddHeader("x-test-mode", "true");
+        request.AddHeader("x-api-key", "reqres-free-v1"); 
 
         pathParams?.ForEach(param => request.AddUrlSegment(param.Key, param.Value.ToString()!));
         queryParams?.ForEach(param => request.AddQueryParameter(param.Key, param.Value.ToString()));
@@ -40,16 +41,15 @@ public class PlainRestMethods : IRestMethods
     }
 
     public IResponse PostWithBody<T>(string endpoint,
-        string? token = "",
         Dictionary<string, object>? pathParams = null,
         T? body = default)
     {
         var client = new RestClient(BaseUrl);
         var request = new RestRequest(endpoint, Method.Post);
-        request.AddHeader("Authorization", $"Bearer {token}");
         request.AddHeader("Content-Type", "application/json");
         request.AddHeader("Accept", "*/*");
-        request.AddHeader("x-test-mode", "true");
+        request.AddHeader("x-api-key", "reqres-free-v1"); 
+
 
         pathParams?.ForEach(param => request.AddUrlSegment(param.Key, param.Value.ToString()!));
         request.AddBody(_jsonConverter!.ToJson<T>(body!));
@@ -57,13 +57,11 @@ public class PlainRestMethods : IRestMethods
     }
 
     public IResponse PostWithParams<T>(string endpoint,
-        string? token = "",
         Dictionary<string, object>? pathParams = null,
         Dictionary<string, object>? formParams = null)
     {
         var client = new RestClient(BaseUrl);
         var request = new RestRequest(endpoint, Method.Post);
-        request.AddHeader("Authorization", $"Bearer {token}");
         request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
         request.AddHeader("Accept", "*/*");
         pathParams?.ForEach(param => request.AddUrlSegment(param.Key, param.Value.ToString()!));
@@ -72,14 +70,12 @@ public class PlainRestMethods : IRestMethods
     }
 
     public IResponse PostWithMultiParts<T>(string endpoint,
-        string? token = "",
         Dictionary<string, object>? pathParams = null,
         Dictionary<string, object>? formParams = null,
         Dictionary<string, object>? multiParts = null)
     {
         var client = new RestClient(BaseUrl);
         var request = new RestRequest(endpoint, Method.Post);
-        request.AddHeader("Authorization", $"Bearer {token}");
         request.AddHeader("Content-Type", "multipart/form-data");
         request.AddHeader("Accept", "*/*");
         pathParams?.ForEach(param => request.AddUrlSegment(param.Key, param.Value.ToString()!));

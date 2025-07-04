@@ -1,4 +1,9 @@
-namespace BaladGateway.Utils;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using Common.Utils;
+
+namespace ParaBankAppPractice.Utils;
 
 public static class ConfigurationsHelper
 {
@@ -7,21 +12,16 @@ public static class ConfigurationsHelper
         var env = Environment.GetEnvironmentVariable("ENVIRONMENT");
         if (string.IsNullOrEmpty(env)) env = "testing"; 
 
-        var configurationsFile = Path.Combine(Directory.GetCurrentDirectory(), $"configurations-{env}.json");
+        var configurationsFile = Path.Combine(AppContext.BaseDirectory, $"configurations-{env}.json");
+
+        Console.WriteLine($"Loading config from: {configurationsFile}");
+
         return new JsonConverter().FromJson<Configurations>(File.ReadAllText(configurationsFile));
     }
 }
+
 public record Configurations(
-    string GatewayBaseUrl,
-    string DashboardApiPrefix,
-    string OperationsApiPrefix,
-    string OperationsDashboardUrl,
-    string DashboardUrl,
-    string TenantTokenEndpoint,
-    string OperationsApiScope,
-    string DashboardApiScope,
-    List<Client> Clients,
-    Client OperationsClient
+    string BaseUrl
 );
 
 

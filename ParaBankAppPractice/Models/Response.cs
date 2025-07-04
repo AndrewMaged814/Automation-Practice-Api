@@ -2,7 +2,11 @@ using System.Collections.Generic;
 
 namespace ParaBankAppPractice.Models;
 
-public class ErrorResponse
+public interface IResponse<out T>
 {
-	public string Error { get; set; } = string.Empty;
+	T? Data { get; }
 }
+
+public record Response<T>(
+	T? Data
+) : IResponse<T>;

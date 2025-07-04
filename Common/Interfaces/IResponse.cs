@@ -7,4 +7,5 @@ public interface IResponse
 	HttpStatusCode GetStatusCode();
 	T GetBody<T>();
 	string GetHeader(string header);
+	
 }

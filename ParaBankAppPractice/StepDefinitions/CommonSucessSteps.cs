@@ -1,63 +1,34 @@
-﻿using System.Collections.Generic;
-using System.Net;
-using Common.Extensions;
+﻿using System.Net;
+using System.Threading.Tasks;
 using Common.Interfaces;
-using Common.Logger;
-using Common.RestMethods;
 using ParaBankAppPractice.Utils;
-using Serilog;
-using Xunit.Abstractions;
 
 namespace ParaBankAppPractice.StepDefinitions;
 
-public abstract class TestBase<TResponse>(
-    string testEndpoint,
-    ITestOutputHelper outputHelper,
-    ScenarioContext scenarioContext)
+[Binding]
+public class CommonSuccessTest(ScenarioContext scenarioContext)
 {
-    protected readonly ILogger logger = LoggerFactory.GetLogger(outputHelper);
-    protected readonly ScenarioContext scenarioContext = scenarioContext;
-    protected readonly IRestMethods methods = RestMethodsFactory.GetMethods();
-
-    protected TResponse Response => scenarioContext.Get<TResponse>(ScenarioContextKeys.ResponseKey);
-    // protected Response<TResponse> ResponseData => scenarioContext.Get<Response<TResponse>>(ScenarioContextKeys.ResponseKey);
-
-    protected HttpStatusCode StatusCode =>
-        scenarioContext.Get<HttpStatusCode>(ScenarioContextKeys.ResponseStatusCodeKey);
-
-    public void Post<TRequest>(TRequest request, Dictionary<string, object>? pathParams = null)
+    [Then("User receives empty success response")]
+    public void ThenUserReceivesEmptySuccessResponse()
     {
-        var response = methods.PostWithBody(
-            testEndpoint,
-            pathParams,
-            request
-        );
-        SetContextData(response);
+        var responseBody = scenarioContext.Get<object>(ScenarioContextKeys.ResponseKey);
+        var statusCode = scenarioContext.Get<HttpStatusCode>(ScenarioContextKeys.ResponseStatusCodeKey);
+
+        AssertHelper.AssertSuccessEmptyResponse(statusCode, responseBody);
     }
 
-    public void Get(Dictionary<string, object>? queryParams = null, Dictionary<string, object>? pathParams = null)
+    [Then("User receives success response")]
+    public void ThenUserReceivesSuccessResponse()
     {
-        var response = methods.Get<IResponse>(
-            testEndpoint,
-            pathParams,
-            queryParams
-        );
-        SetContextData(response);
+        var responseBody = scenarioContext.Get<object>(ScenarioContextKeys.ResponseKey);
+        var statusCode = scenarioContext.Get<HttpStatusCode>(ScenarioContextKeys.ResponseStatusCodeKey);
+
+        AssertHelper.AssertSuccessResponse(statusCode, responseBody);
     }
 
-    private void SetContextData(IResponse response)
+    [Then(@"User wait for (.*) seconds")]
+    public async Task ThenUserWaitForSecondsAsync(int seconds)
     {
-        if (response is PlainResponse plainResponse)
-            logger.LogDebug($"Full Request URL: {plainResponse.GetResponseUri()}");
-
-        var httpStatusCode = response!.GetStatusCode();
-        var body = response.GetBody<TResponse>();
-
-        logger.LogDebug(httpStatusCode.ToString());
-        logger.LogDebug(body.AsJson());
-
-
-        scenarioContext[ScenarioContextKeys.ResponseKey] = body;
-        scenarioContext[ScenarioContextKeys.ResponseStatusCodeKey] = httpStatusCode;
+        await Task.Delay(seconds * 1000);
     }
 }
