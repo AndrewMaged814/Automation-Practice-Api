@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>ApiReqresPractice</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+        <PackageReference Include="Reqnroll.xUnit" Version="2.4.1" />
+        <PackageReference Include="xunit" Version="2.9.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Common\Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Features\API\Register\Register.feature.cs">
+        <DependentUpon>Register.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+        <None Update="configurations-*.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <Compile Update="Features\API\ListUsers\GetUsers.feature.cs">
+          <DependentUpon>Register.feature</DependentUpon>
+          <AutoGen>true</AutoGen>
+          <DesignTime>true</DesignTime>
+          <Visible>true</Visible>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="configurations-testing.json" />
+      <Content Include="configurations-testing.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>
