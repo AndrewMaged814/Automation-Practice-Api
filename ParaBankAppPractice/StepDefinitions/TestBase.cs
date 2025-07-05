@@ -4,92 +4,85 @@ using Common.Extensions;
 using Common.Interfaces;
 using Common.Logger;
 using Common.RestMethods;
-using ParaBankAppPractice.Models;
 using ParaBankAppPractice.Utils;
 using Serilog;
 using Xunit.Abstractions;
 
-namespace ParaBankAppPractice.StepDefinitions;
-
-public abstract class TestBase<TResponse>(
-    string testEndpoint,
-    ITestOutputHelper outputHelper,
-    ScenarioContext scenarioContext)
+namespace ParaBankAppPractice.StepDefinitions
 {
-    protected readonly ILogger logger = LoggerFactory.GetLogger(outputHelper);
-    protected readonly ScenarioContext scenarioContext = scenarioContext;
-    protected readonly IRestMethods methods = RestMethodsFactory.GetMethods();
-
-    protected Response<TResponse> Response => scenarioContext.Get<Response<TResponse>>(ScenarioContextKeys.ResponseKey);
-    protected HttpStatusCode StatusCode => scenarioContext.Get<HttpStatusCode>(ScenarioContextKeys.ResponseStatusCodeKey);
-
-    // === POST with expected wrapped response ===
-    public void Post<TRequest>(TRequest request, Dictionary<string, object>? pathParams = null)
+    public abstract class TestBase<TResponse>(
+        string testEndpoint,
+        ITestOutputHelper outputHelper,
+        ScenarioContext scenarioContext)
     {
-        logger.LogDebug(request.AsJson());
-        var response = methods.PostWithBody(testEndpoint, body: request, pathParams: pathParams);
-        SetContextData(response);
-    }
+        protected readonly ILogger logger = LoggerFactory.GetLogger(outputHelper);
+        protected readonly ScenarioContext scenarioContext = scenarioContext;
+        protected readonly IRestMethods methods = RestMethodsFactory.GetMethods();
 
-    // === POST with expected raw/unwrapped response ===
-    public void PostRaw<TRequest, TRawResponse>(TRequest request, Dictionary<string, object>? pathParams = null)
-    {
-        logger.LogDebug(request.AsJson());
-        var response = methods.PostWithBody(testEndpoint, body: request, pathParams: pathParams);
-        SetRawContextData<TRawResponse>(response);
-    }
+        protected TResponse Response =>
+            scenarioContext.Get<TResponse>(ScenarioContextKeys.ResponseKey);
 
-    // === Multipart form POST ===
-    public void PostForm(
-        Dictionary<string, object>? formParams = null,
-        Dictionary<string, object>? pathParams = null,
-        Dictionary<string, object>? multiParts = null)
-    {
-        logger.LogDebug(formParams.AsJson());
-        var response = methods.PostWithMultiParts<IResponse>(testEndpoint, pathParams: pathParams, formParams: formParams, multiParts: multiParts);
-        SetContextData(response);
-    }
+        protected HttpStatusCode StatusCode =>
+            scenarioContext.Get<HttpStatusCode>(ScenarioContextKeys.ResponseStatusCodeKey);
 
-    // === GET request ===
-    public void Get(Dictionary<string, object>? queryParams = null, Dictionary<string, object>? pathParams = null)
-    {
-        var response = methods.Get<IResponse>(testEndpoint, queryParams: queryParams, pathParams: pathParams);
-        SetContextData(response);
-    }
-
-    // === Handles wrapped response ===
-    public void SetContextData(IResponse response)
-    {
-        var statusCode = response.GetStatusCode();
-        var responseBody = response.GetBody<Response<TResponse>>();
-
-        logger.LogDebug(statusCode.ToString());
-        logger.LogDebug(responseBody.AsJson());
-
-        if (response is PlainResponse plainResponse)
+        // === GET request ===
+        public void Get(
+            Dictionary<string, object>? queryParams = null,
+            Dictionary<string, object>? pathParams = null)
         {
-            logger.LogDebug($"Full Request URL: {plainResponse.GetResponseUri()}");
+            var response = methods.Get<IResponse>(testEndpoint, queryParams: queryParams, pathParams: pathParams);
+            SetContextData(response);
         }
 
-        scenarioContext[ScenarioContextKeys.ResponseKey] = responseBody;
-        scenarioContext[ScenarioContextKeys.ResponseStatusCodeKey] = statusCode;
-    }
-
-    // === Handles raw/unwrapped response ===
-    public void SetRawContextData<TRaw>(IResponse response)
-    {
-        var statusCode = response.GetStatusCode();
-        var responseBody = response.GetBody<TRaw>();
-
-        logger.LogDebug(statusCode.ToString());
-        logger.LogDebug(responseBody.AsJson());
-
-        if (response is PlainResponse plainResponse)
+        // === POST with expected wrapped response ===
+        public void Post<TRequest>(TRequest request, Dictionary<string, object>? pathParams = null)
         {
-            logger.LogDebug($"Full Request URL: {plainResponse.GetResponseUri()}");
+            logger.LogDebug(request.AsJson());
+            var response = methods.PostWithBody(testEndpoint, body: request, pathParams: pathParams);
+            SetContextData(response);
         }
 
-        scenarioContext[ScenarioContextKeys.ResponseKey] = responseBody;
-        scenarioContext[ScenarioContextKeys.ResponseStatusCodeKey] = statusCode;
+        // === POST with expected raw/unwrapped response ===
+        public void PostRaw<TRequest>(TRequest request, Dictionary<string, object>? pathParams = null)
+        {
+            logger.LogDebug(request.AsJson());
+            var response = methods.PostWithBody(testEndpoint, body: request, pathParams: pathParams);
+            SetRawContextData(response);
+        }
+
+        private void SetContextData(IResponse response)
+        {
+            var statusCode = response.GetStatusCode();
+            // deserialize directly into TResponse
+            var responseBody = response.GetBody<TResponse>();
+
+            LogDebug(response, statusCode, responseBody);
+
+            scenarioContext[ScenarioContextKeys.ResponseKey] = responseBody!;
+            scenarioContext[ScenarioContextKeys.ResponseStatusCodeKey] = statusCode;
+        }
+
+        private void SetRawContextData(IResponse response)
+        {
+            var statusCode = response.GetStatusCode();
+            var responseBody = response.GetBody<TResponse>();
+
+            LogDebug(response, statusCode, responseBody);
+
+            scenarioContext[ScenarioContextKeys.ResponseKey] = responseBody!;
+            scenarioContext[ScenarioContextKeys.ResponseStatusCodeKey] = statusCode;
+        }
+
+        private void LogDebug(IResponse response, HttpStatusCode statusCode, TResponse body)
+        {
+            var raw = response.GetRawBody();
+            logger.LogDebug("Raw response: " + raw);
+            logger.LogDebug(statusCode.ToString());
+            logger.LogDebug(body!.AsJson());
+            if (response is PlainResponse plain)
+            {
+                logger.LogDebug($"Full Request URL: {plain.GetResponseUri()}");
+            }
+        }
     }
 }

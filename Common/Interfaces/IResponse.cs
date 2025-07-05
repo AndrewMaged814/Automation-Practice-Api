@@ -6,6 +6,7 @@ public interface IResponse
 {
 	HttpStatusCode GetStatusCode();
 	T GetBody<T>();
+	string GetRawBody(); 
 	string GetHeader(string header);
 	
 }

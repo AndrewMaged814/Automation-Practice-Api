@@ -2,6 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
     <ItemGroup>
@@ -24,6 +25,12 @@
         <None Update="configurations-*.json">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
+        <Compile Update="Features\API\ListUsers\GetUsers.feature.cs">
+          <DependentUpon>Register.feature</DependentUpon>
+          <AutoGen>true</AutoGen>
+          <DesignTime>true</DesignTime>
+          <Visible>true</Visible>
+        </Compile>
     </ItemGroup>
 
     <ItemGroup>

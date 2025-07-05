@@ -21,7 +21,7 @@ public class PlainResponse : IResponse
     {
         return response.ResponseUri!;
     }
-
+    public string GetRawBody() => response.Content ?? string.Empty;
 
     public HttpStatusCode GetStatusCode()
     {

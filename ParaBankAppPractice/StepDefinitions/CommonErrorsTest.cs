@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using Common.Interfaces;
 using ParaBankAppPractice.Models;
 using ParaBankAppPractice.Models.API.Register;
 using ParaBankAppPractice.Utils;
@@ -20,4 +21,12 @@ public class CommonErrorsTest(ScenarioContext scenarioContext)
         var expectedError = errorTable.Rows[0]["error"]; 
         Assert.Equal(expectedError, response.Error);
     }
+    [Then("User receives not found response")]
+    public void ThenUserReceivesNotFoundResponse()
+    {
+        var statusCode = scenarioContext.Get<HttpStatusCode>(ScenarioContextKeys.ResponseStatusCodeKey);
+
+        Assert.Equal(HttpStatusCode.NotFound, statusCode);
+    }
+
 }
