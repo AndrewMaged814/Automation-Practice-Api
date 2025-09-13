@@ -1,9 +1,9 @@
 ﻿using System.Net;
 using System.Threading.Tasks;
-using Common.Interfaces;
+using AutomationPractice_api.Utils;
 using AutomationPractice_ui_api.Utils;
 
-namespace AutomationPractice_ui_api.StepDefinitions;
+namespace AutomationPractice_api.StepDefinitions.API;
 
 [Binding]
 public class CommonSuccessTest(ScenarioContext scenarioContext)

@@ -1,6 +1,6 @@
 ﻿using Xunit.Abstractions;
 
-namespace AutomationPractice_ui_api.StepDefinitions.API;
+namespace AutomationPractice_api.StepDefinitions.API;
 
 public abstract class APITestBase<TResponse>(
     ITestOutputHelper outputHelper,

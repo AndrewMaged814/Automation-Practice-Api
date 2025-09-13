@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace AutomationPractice_ui_api.Models.API;
+namespace AutomationPractice_api.Models.API;
 
 public record Paginated<T>(
     int Page,

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using AutomationPractice_ui_api.Models.API.Register;
-using AutomationPractice_ui_api.StepDefinitions.API;
+using AutomationPractice_api.Models.API.Register;
+using AutomationPractice_api.StepDefinitions.API;
 using AutomationPractice_ui_api.Utils;
 using Xunit.Abstractions;
 
@@ -15,8 +15,8 @@ public sealed class Register(ITestOutputHelper outputHelper, ScenarioContext sce
     {
         var row = table.Rows[0];
 
-        var email = row.ContainsKey("email") ? row["email"] : null;
-        var password = row.ContainsKey("password") ? row["password"] : null;
+        var email = row.TryGetValue("email", value: out var value) ? value : null;
+        var password = row.TryGetValue("password", out var value1) ? value1 : null;
 
         var payload = new Dictionary<string, object>();
         if (!string.IsNullOrWhiteSpace(email)) payload["email"] = email;
@@ -24,6 +24,6 @@ public sealed class Register(ITestOutputHelper outputHelper, ScenarioContext sce
 
         Post(payload); 
         
-        if (Response != null && Response.Id != 0) scenarioContext.SetValue(ScenarioContextKeys.UserId, Response.Id);
+        if (Response != null && Response.Id != 0) ScenarioContext.SetValue(ScenarioContextKeys.UserId, Response.Id);
     }
 }

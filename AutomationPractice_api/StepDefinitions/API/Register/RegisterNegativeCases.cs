@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using AutomationPractice_ui_api.Models;
+using AutomationPractice_api.Models.API;
 using Xunit.Abstractions;
 
-namespace AutomationPractice_ui_api.StepDefinitions.API.Register;
+namespace AutomationPractice_api.StepDefinitions.API.Register;
 
 [Binding]
 public sealed class RegisterNegativeCases(ITestOutputHelper outputHelper, ScenarioContext scenarioContext)

@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.Net;
-using Common.Extensions;
-using AutomationPractice_ui_api.Models;
 
-namespace AutomationPractice_ui_api.Utils;
+namespace AutomationPractice_api.Utils;
 
 public static class AssertHelper
 {

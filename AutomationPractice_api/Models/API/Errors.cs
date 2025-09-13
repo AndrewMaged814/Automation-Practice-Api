@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace AutomationPractice_ui_api.Models;
+namespace AutomationPractice_api.Models.API;
 
 public class ErrorResponse
 {

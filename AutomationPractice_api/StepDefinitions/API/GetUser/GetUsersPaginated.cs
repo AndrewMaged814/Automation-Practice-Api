@@ -1,12 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using AutomationPractice_ui_api.Models;
-using AutomationPractice_ui_api.Models.API.GetUser;
-using AutomationPractice_ui_api.StepDefinitions.API;
-using AutomationPractice_ui_api.Models.API;
+using AutomationPractice_api.Models.API;
+using AutomationPractice_api.Models.API.GetUser;
 using Xunit.Abstractions;
 
-namespace AutomationPractice_ui_api.StepDefinitions.API.GetUser;
+namespace AutomationPractice_api.StepDefinitions.API.GetUser;
 
 [Binding]
 public sealed class GetUsersPaginated(ITestOutputHelper outputHelper, ScenarioContext scenarioContext)

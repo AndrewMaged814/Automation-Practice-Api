@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using AutomationPractice_ui_api.Models.API.GetUser;
+using AutomationPractice_api.Models.API.GetUser;
 using AutomationPractice_ui_api.Utils;
 using Xunit.Abstractions;
 
-namespace AutomationPractice_ui_api.StepDefinitions.API.GetUser;
+namespace AutomationPractice_api.StepDefinitions.API.GetUser;
 
 [Binding]
 public sealed class GetSingleUser(ITestOutputHelper outputHelper, ScenarioContext scenarioContext)
@@ -18,7 +18,7 @@ public sealed class GetSingleUser(ITestOutputHelper outputHelper, ScenarioContex
     {
         Get(pathParams: new Dictionary<string, object>
         {
-            { "user_id", scenarioContext.GetValue<int>(ScenarioContextKeys.UserId) }
+            { "user_id", ScenarioContext.GetValue<int>(ScenarioContextKeys.UserId) }
         });
     }
 

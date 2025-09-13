@@ -1,4 +1,4 @@
-﻿namespace AutomationPractice_ui_api.Models.API.Register;
+﻿namespace AutomationPractice_api.Models.API.Register;
 
 public record RegisterResponse
 {

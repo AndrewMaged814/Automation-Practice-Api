@@ -1,4 +1,4 @@
-﻿namespace AutomationPractice_ui_api.Models.API.GetUser;
+﻿namespace AutomationPractice_api.Models.API.GetUser;
 
 public record GetSingleUserResponse
 {

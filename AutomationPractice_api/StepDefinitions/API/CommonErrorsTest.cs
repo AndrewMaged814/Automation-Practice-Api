@@ -1,8 +1,8 @@
 ﻿using System.Net;
-using AutomationPractice_ui_api.Models;
+using AutomationPractice_api.Models.API;
 using AutomationPractice_ui_api.Utils;
 
-namespace AutomationPractice_ui_api.StepDefinitions.API;
+namespace AutomationPractice_api.StepDefinitions.API;
 
 [Binding]
 public class CommonErrorsTest(ScenarioContext scenarioContext)

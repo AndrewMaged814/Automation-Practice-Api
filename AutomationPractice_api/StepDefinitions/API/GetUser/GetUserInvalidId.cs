@@ -1,8 +1,7 @@
 using System.Collections.Generic;
-using AutomationPractice_ui_api.StepDefinitions.API;
 using Xunit.Abstractions;
 
-namespace AutomationPractice_ui_api.StepDefinitions.API.GetUser;
+namespace AutomationPractice_api.StepDefinitions.API.GetUser;
 
 [Binding]
 internal sealed class GetUserInvalidId(ITestOutputHelper outputHelper, ScenarioContext scenarioContext)
