@@ -1,6 +1,6 @@
 # AutomationPractice UI+API
 
-This project is a C# test automation framework for API and UI testing, structured for modularity and maintainability. It is designed to test the Reqres API (https://reqres.in/) and can be extended for other APIs or UI scenarios.
+This project is a C# test automation framework for API testing, structured for modularity and maintainability. It is designed to test the Reqres API (https://reqres.in/) and can be extended for other APIs or UI scenarios.
 
 ## Features
 - **API Testing**: Supports GET and POST requests, including handling of path, query, form, and multipart parameters.
