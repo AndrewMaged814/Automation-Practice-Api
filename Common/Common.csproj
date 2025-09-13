@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="Reqnroll.xUnit" Version="2.4.1" />
+        <PackageReference Include="RestSharp" Version="112.0.0" />
+        <PackageReference Include="xunit" Version="2.9.3" />
+        <PackageReference Include="Serilog" Version="4.0.1" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+        <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+        <PackageReference Include="Serilog.Sinks.XUnit" Version="3.0.5" />
+        <PackageReference Include="Serilog.Sinks.XUnit.Injectable" Version="2.1.45" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="3.1.1">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <UpToDateCheckInput Remove="Features\Calculator.feature" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <UpToDateCheckBuild Remove="Features\Calculator.feature.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Logs\" />
+    </ItemGroup>
+
+</Project>
